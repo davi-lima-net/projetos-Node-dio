@@ -1,24 +1,24 @@
-# 🎙️ Podcast Manager
+# Podcast Manager
 
-Um **gerenciador de podcasts** desenvolvido com **Node.js** e **TypeScript**, que permite cadastrar, organizar e consumir episódios de forma prática.  
+## Descrição
 
-## 🚀 Funcionalidades
+Um gerenciador de podcasts robusto e escalável, construído com Node.js e TypeScript. Este projeto permite que os usuários organizem, reproduzam e descubram seus podcasts favoritos de forma eficiente. Ideal para quem busca uma solução moderna e performática para gerenciar conteúdo de áudio.
 
-- 📂 Cadastro de podcasts  
-- 🎧 Registro e listagem de episódios  
-- 🔍 Busca de podcasts por título ou autor  
-- 🗂️ Organização por categorias  
-- 📡 API REST para integração com clientes externos  
-- ✅ Testes automatizados com Jest  
+## Funcionalidades
 
-## 🛠️ Tecnologias
+*   **Gerenciamento de Feed RSS:** Adicione e atualize feeds de podcasts automaticamente.
+*   **Reprodução de Áudio:** Player de áudio integrado para ouvir podcasts diretamente na aplicação.
+*   **Organização:** Crie listas de reprodução e categorize seus podcasts.
+*   **Pesquisa:** Encontre podcasts por título, descrição ou tags.
+*   **Notificações:** Receba alertas sobre novos episódios.
+*   **API RESTful:** Exponha endpoints para integração com outras aplicações.
 
-- [Node.js](https://nodejs.org/)  
-- [TypeScript](https://www.typescriptlang.org/)  
-- [Express](https://expressjs.com/)  
-- [Prisma ORM](https://www.prisma.io/)  
-- [Jest](https://jestjs.io/)  
-- [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)  
+## Tecnologias Utilizadas
 
-## 📦 Instalação
+*   **Backend:** Node.js, TypeScript,
+*   **Autenticação:** JWT (JSON Web Tokens)
+*   **Outros:** npm/yarn, ESLint, Prettier
+
+
+
 
