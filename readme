@@ -1,47 +1,24 @@
-// UTILS
-// serve para eliminar textos flutuantes que são designados no codigo e organiza o processo;
-// serve para definir os métodos HTTP que serão utilizados no servidor e executalo de forma mais organizada
-// REPOSITORIES
-// path serve para manipulação de caminhos de arquivos e diretórios de forma independente do sistema operacional.
-// fs é um módulo nativo do Node.js para manipulação de arquivos, ler e escerver arquivos, criar diretórios, etc.
-// dirname não funciona se tiver o metodo type no package.json, que é usado para definir o tipo de módulo como ES6.
-// dirname é uma variável global que contém o diretório atual do arquivo em execuçãoe serve para construir caminhos relativos.
-// join é um método do módulo path que combina segmentos de caminho em um único caminho, garantindo
-// readfilesync é um método síncrono do módulo fs que lê o conteúdo de um arquivo e retorna como uma string ou buffer.
-// promise podcast é uma promessa que vai retornar um vetor de interfaces Podcast, que contém os dados dos podcasts.
-// interface para definir a estrutura de dados de um podcast, incluindo id, título, descrição e episódios. (model.podcast)
-// filter serve para filtrar os dados de um vetor com base em uma condição específica.
-// repositoriesPodcast é uma função que lê um arquivo JSON contendo dados de podcasts e retorna esses dados
-// CONTROLLER
-// writeHead serve para escrever o cabeçalho da resposta HTTP
-// getListEpisodies é uma função que recebe request e response
-// response end serve para finalizar a resposta HTTP
-// response.writeHead(200, {'Content-Type': 'application/json'}) define o status da resposta como 200 (OK) e o tipo de conteúdo como JSON
-// response.end envia a resposta final para o cliente, que neste caso é um objeto JSON com
-// stringfy converte o objeto JavaScript em uma string JSON
-// o objeto JSON retornado tem uma propriedade "name" com o valor "podcast"
-// content deve ser um vetor de objetos que representam os episódios do podcast, exibidos no arquivo JSON
-// foram criados duas rotas unicas para cada função, uma para listar os episódios e outra para filtrar os episódios
-// getListEpisodies e getFilterEpisodies são funções que recebem request e response
-// SERVER
-// server HTTP criado aqui no server.ts
-// request é tudo que vem do cliente
-// response é tudo que vai para o cliente
-// createserver cria um servidor http do node
-// para receber dados precisa acessar uma porta
-// porta 3000 é uma porta comum para desenvolvimento
-// request.method é o método HTTP que está sendo usado, como GET, POST, etc. se for GET, chama a função getListEpisodies
-// LIST EPISODES
-// ele é responsavel para devolver os dados para o controller
-// os dados do podcast que estao no controller devem ser movidos para o service
-// serviceListEpisodies é uma função que retorna uma lista de episódios de podcast
+# 🎙️ Podcast Manager
 
-# FILTER
-// export const serviceListEpisodies = async (podcastName: string) => {
-//     const data = await repositoriesPodcast (podcastName);
-//     return data;
-// }
-// export const serviceFilterEpisodies = async (podcastName: string) => {
-//     const data = await repositoriesPodcast(podcastName);
-//     return data;
-// };
+Um **gerenciador de podcasts** desenvolvido com **Node.js** e **TypeScript**, que permite cadastrar, organizar e consumir episódios de forma prática.  
+
+## 🚀 Funcionalidades
+
+- 📂 Cadastro de podcasts  
+- 🎧 Registro e listagem de episódios  
+- 🔍 Busca de podcasts por título ou autor  
+- 🗂️ Organização por categorias  
+- 📡 API REST para integração com clientes externos  
+- ✅ Testes automatizados com Jest  
+
+## 🛠️ Tecnologias
+
+- [Node.js](https://nodejs.org/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [Express](https://expressjs.com/)  
+- [Prisma ORM](https://www.prisma.io/)  
+- [Jest](https://jestjs.io/)  
+- [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)  
+
+## 📦 Instalação
+
